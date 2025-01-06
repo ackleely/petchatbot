@@ -1,0 +1,485 @@
+version: "3.1"
+nlu:
+- intent: fallback
+  examples: |
+    - I don't understand
+    - That doesn't make sense
+    - What are you talking about?
+    - Sorry, I didn't get that
+    - I am confused
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - What are you?
+    - Are you human or a bot?
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - See you later
+    - Bye
+- intent: action_inquiry
+  examples: |
+    - What should I do
+    - How can I treat this?
+    - How can I treat issue?
+    - What steps should I take to help my pet?
+    - Can you give me first-aid tips?
+    - What should I do
+    - What’s the best course of action?
+    - Is there any medication I can use?
+    - What’s the immediate first aid for this condition?
+    - Can you guide me on what to do next?
+- intent: thanks
+  examples: |
+    - Thank you
+    - Thanks a lot
+- intent: symptom_inquiry_1
+  examples: |
+    - My pet has Vomiting, diarrhea, dehydration, fever, loss of appetite.. What does it mean?
+    - Symptoms include Vomiting, diarrhea, dehydration, fever, loss of appetite.. Can you help?
+    - My pet is showing signs of Vomiting, diarrhea, dehydration, fever, loss of appetite.. Should I be concerned?
+    - I'm noticing Vomiting, diarrhea, dehydration, fever, loss of appetite. in my pet. What could it indicate?
+    - What does it mean if my pet has Vomiting, diarrhea, dehydration, fever, loss of appetite.?
+    - My pet has Vomiting, diarrhea, dehydration, fever, loss of appetite.. Should I consult a vet?
+    - My pet has Vomiting, diarrhea, dehydration, fever, loss of appetite.. What does it mean?
+    - How serious is it if my pet has Vomiting, diarrhea, dehydration, fever, loss of appetite.
+- intent: symptom_inquiry_2
+  examples: |
+    - My pet has Head shaking, scratching at ears, dark waxy discharge, foul odor.. What does it mean?
+    - Symptoms include Head shaking, scratching at ears, dark waxy discharge, foul odor.. Can you help?
+    - My pet is showing signs of Head shaking, scratching at ears, dark waxy discharge, foul odor.. Should I be concerned?
+    - I'm noticing Head shaking, scratching at ears, dark waxy discharge, foul odor. in my pet. What could it indicate?
+    - What does it mean if my pet has Head shaking, scratching at ears, dark waxy discharge, foul odor.?
+    - My pet has Head shaking, scratching at ears, dark waxy discharge, foul odor.. Should I consult a vet?
+    - My pet has Head shaking, scratching at ears, dark waxy discharge, foul odor.. What does it mean?
+    - How serious is it if my pet has Head shaking, scratching at ears, dark waxy discharge, foul odor.
+- intent: symptom_inquiry_3
+  examples: |
+    - My pet has Visible wound, light bleeding, mild swelling.. What does it mean?
+    - Symptoms include Visible wound, light bleeding, mild swelling.. Can you help?
+    - My pet is showing signs of Visible wound, light bleeding, mild swelling.. Should I be concerned?
+    - I'm noticing Visible wound, light bleeding, mild swelling. in my pet. What could it indicate?
+    - What does it mean if my pet has Visible wound, light bleeding, mild swelling.?
+    - My pet has Visible wound, light bleeding, mild swelling.. Should I consult a vet?
+    - My pet has Visible wound, light bleeding, mild swelling.. What does it mean?
+    - How serious is it if my pet has Visible wound, light bleeding, mild swelling.
+- intent: symptom_inquiry_4
+  examples: |
+    - My pet has Occasional vomiting, soft stool, or mild diarrhea.. What does it mean?
+    - Symptoms include Occasional vomiting, soft stool, or mild diarrhea.. Can you help?
+    - My pet is showing signs of Occasional vomiting, soft stool, or mild diarrhea.. Should I be concerned?
+    - I'm noticing Occasional vomiting, soft stool, or mild diarrhea. in my pet. What could it indicate?
+    - What does it mean if my pet has Occasional vomiting, soft stool, or mild diarrhea.?
+    - My pet has Occasional vomiting, soft stool, or mild diarrhea.. Should I consult a vet?
+    - My pet has Occasional vomiting, soft stool, or mild diarrhea.. What does it mean?
+    - How serious is it if my pet has Occasional vomiting, soft stool, or mild diarrhea.
+- intent: symptom_inquiry_5
+  examples: |
+    - My pet has Red, moist, and irritated areas of skin.. What does it mean?
+    - Symptoms include Red, moist, and irritated areas of skin.. Can you help?
+    - My pet is showing signs of Red, moist, and irritated areas of skin.. Should I be concerned?
+    - I'm noticing Red, moist, and irritated areas of skin. in my pet. What could it indicate?
+    - What does it mean if my pet has Red, moist, and irritated areas of skin.?
+    - My pet has Red, moist, and irritated areas of skin.. Should I consult a vet?
+    - My pet has Red, moist, and irritated areas of skin.. What does it mean?
+    - How serious is it if my pet has Red, moist, and irritated areas of skin.
+- intent: symptom_inquiry_6
+  examples: |
+    - My pet has Itchy skin, watery eyes, sneezing, or mild swelling.. What does it mean?
+    - Symptoms include Itchy skin, watery eyes, sneezing, or mild swelling.. Can you help?
+    - My pet is showing signs of Itchy skin, watery eyes, sneezing, or mild swelling.. Should I be concerned?
+    - I'm noticing Itchy skin, watery eyes, sneezing, or mild swelling. in my pet. What could it indicate?
+    - What does it mean if my pet has Itchy skin, watery eyes, sneezing, or mild swelling.?
+    - My pet has Itchy skin, watery eyes, sneezing, or mild swelling.. Should I consult a vet?
+    - My pet has Itchy skin, watery eyes, sneezing, or mild swelling.. What does it mean?
+    - How serious is it if my pet has Itchy skin, watery eyes, sneezing, or mild swelling.
+- intent: symptom_inquiry_7
+  examples: |
+    - My pet has Dry, rough, or cracked paw pads, limping.. What does it mean?
+    - Symptoms include Dry, rough, or cracked paw pads, limping.. Can you help?
+    - My pet is showing signs of Dry, rough, or cracked paw pads, limping.. Should I be concerned?
+    - I'm noticing Dry, rough, or cracked paw pads, limping. in my pet. What could it indicate?
+    - What does it mean if my pet has Dry, rough, or cracked paw pads, limping.?
+    - My pet has Dry, rough, or cracked paw pads, limping.. Should I consult a vet?
+    - My pet has Dry, rough, or cracked paw pads, limping.. What does it mean?
+    - How serious is it if my pet has Dry, rough, or cracked paw pads, limping.
+- intent: symptom_inquiry_8
+  examples: |
+    - My pet has Gagging, retching, occasional vomiting of hairballs.. What does it mean?
+    - Symptoms include Gagging, retching, occasional vomiting of hairballs.. Can you help?
+    - My pet is showing signs of Gagging, retching, occasional vomiting of hairballs.. Should I be concerned?
+    - I'm noticing Gagging, retching, occasional vomiting of hairballs. in my pet. What could it indicate?
+    - What does it mean if my pet has Gagging, retching, occasional vomiting of hairballs.?
+    - My pet has Gagging, retching, occasional vomiting of hairballs.. Should I consult a vet?
+    - My pet has Gagging, retching, occasional vomiting of hairballs.. What does it mean?
+    - How serious is it if my pet has Gagging, retching, occasional vomiting of hairballs.
+- intent: symptom_inquiry_9
+  examples: |
+    - My pet has Increased thirst, reduced appetite, vomiting, weight loss.. What does it mean?
+    - Symptoms include Increased thirst, reduced appetite, vomiting, weight loss.. Can you help?
+    - My pet is showing signs of Increased thirst, reduced appetite, vomiting, weight loss.. Should I be concerned?
+    - I'm noticing Increased thirst, reduced appetite, vomiting, weight loss. in my pet. What could it indicate?
+    - What does it mean if my pet has Increased thirst, reduced appetite, vomiting, weight loss.?
+    - My pet has Increased thirst, reduced appetite, vomiting, weight loss.. Should I consult a vet?
+    - My pet has Increased thirst, reduced appetite, vomiting, weight loss.. What does it mean?
+    - How serious is it if my pet has Increased thirst, reduced appetite, vomiting, weight loss.
+- intent: symptom_inquiry_10
+  examples: |
+    - My pet has Chewing on objects, drooling, mild gum bleeding. What does it mean?
+    - Symptoms include Chewing on objects, drooling, mild gum bleeding. Can you help?
+    - My pet is showing signs of Chewing on objects, drooling, mild gum bleeding. Should I be concerned?
+    - I'm noticing Chewing on objects, drooling, mild gum bleeding in my pet. What could it indicate?
+    - What does it mean if my pet has Chewing on objects, drooling, mild gum bleeding?
+    - My pet has Chewing on objects, drooling, mild gum bleeding. Should I consult a vet?
+    - My pet has Chewing on objects, drooling, mild gum bleeding. What does it mean?
+    - How serious is it if my pet has Chewing on objects, drooling, mild gum bleeding
+- intent: symptom_inquiry_11
+  examples: |
+    - My pet has White flakes in fur, mild itching.. What does it mean?
+    - Symptoms include White flakes in fur, mild itching.. Can you help?
+    - My pet is showing signs of White flakes in fur, mild itching.. Should I be concerned?
+    - I'm noticing White flakes in fur, mild itching. in my pet. What could it indicate?
+    - What does it mean if my pet has White flakes in fur, mild itching.?
+    - My pet has White flakes in fur, mild itching.. Should I consult a vet?
+    - My pet has White flakes in fur, mild itching.. What does it mean?
+    - How serious is it if my pet has White flakes in fur, mild itching.
+- intent: symptom_inquiry_12
+  examples: |
+    - My pet has Fever, nasal discharge, coughing, seizures.. What does it mean?
+    - Symptoms include Fever, nasal discharge, coughing, seizures.. Can you help?
+    - My pet is showing signs of Fever, nasal discharge, coughing, seizures.. Should I be concerned?
+    - I'm noticing Fever, nasal discharge, coughing, seizures. in my pet. What could it indicate?
+    - What does it mean if my pet has Fever, nasal discharge, coughing, seizures.?
+    - My pet has Fever, nasal discharge, coughing, seizures.. Should I consult a vet?
+    - My pet has Fever, nasal discharge, coughing, seizures.. What does it mean?
+    - How serious is it if my pet has Fever, nasal discharge, coughing, seizures.
+- intent: symptom_inquiry_13
+  examples: |
+    - My pet has Redness, watery discharge, mild squinting.. What does it mean?
+    - Symptoms include Redness, watery discharge, mild squinting.. Can you help?
+    - My pet is showing signs of Redness, watery discharge, mild squinting.. Should I be concerned?
+    - I'm noticing Redness, watery discharge, mild squinting. in my pet. What could it indicate?
+    - What does it mean if my pet has Redness, watery discharge, mild squinting.?
+    - My pet has Redness, watery discharge, mild squinting.. Should I consult a vet?
+    - My pet has Redness, watery discharge, mild squinting.. What does it mean?
+    - How serious is it if my pet has Redness, watery discharge, mild squinting.
+- intent: symptom_inquiry_14
+  examples: |
+    - My pet has Itching, redness, minor swelling.. What does it mean?
+    - Symptoms include Itching, redness, minor swelling.. Can you help?
+    - My pet is showing signs of Itching, redness, minor swelling.. Should I be concerned?
+    - I'm noticing Itching, redness, minor swelling. in my pet. What could it indicate?
+    - What does it mean if my pet has Itching, redness, minor swelling.?
+    - My pet has Itching, redness, minor swelling.. Should I consult a vet?
+    - My pet has Itching, redness, minor swelling.. What does it mean?
+    - How serious is it if my pet has Itching, redness, minor swelling.
+- intent: symptom_inquiry_15
+  examples: |
+    - My pet has Increased thirst, frequent urination, weight loss, lethargy.. What does it mean?
+    - Symptoms include Increased thirst, frequent urination, weight loss, lethargy.. Can you help?
+    - My pet is showing signs of Increased thirst, frequent urination, weight loss, lethargy.. Should I be concerned?
+    - I'm noticing Increased thirst, frequent urination, weight loss, lethargy. in my pet. What could it indicate?
+    - What does it mean if my pet has Increased thirst, frequent urination, weight loss, lethargy.?
+    - My pet has Increased thirst, frequent urination, weight loss, lethargy.. Should I consult a vet?
+    - My pet has Increased thirst, frequent urination, weight loss, lethargy.. What does it mean?
+    - How serious is it if my pet has Increased thirst, frequent urination, weight loss, lethargy.
+- intent: symptom_inquiry_16
+  examples: |
+    - My pet has Difficulty moving, visible fat, reduced stamina.. What does it mean?
+    - Symptoms include Difficulty moving, visible fat, reduced stamina.. Can you help?
+    - My pet is showing signs of Difficulty moving, visible fat, reduced stamina.. Should I be concerned?
+    - I'm noticing Difficulty moving, visible fat, reduced stamina. in my pet. What could it indicate?
+    - What does it mean if my pet has Difficulty moving, visible fat, reduced stamina.?
+    - My pet has Difficulty moving, visible fat, reduced stamina.. Should I consult a vet?
+    - My pet has Difficulty moving, visible fat, reduced stamina.. What does it mean?
+    - How serious is it if my pet has Difficulty moving, visible fat, reduced stamina.
+- intent: symptom_inquiry_17
+  examples: |
+    - My pet has Occasional sneezing, clear nasal discharge.. What does it mean?
+    - Symptoms include Occasional sneezing, clear nasal discharge.. Can you help?
+    - My pet is showing signs of Occasional sneezing, clear nasal discharge.. Should I be concerned?
+    - I'm noticing Occasional sneezing, clear nasal discharge. in my pet. What could it indicate?
+    - What does it mean if my pet has Occasional sneezing, clear nasal discharge.?
+    - My pet has Occasional sneezing, clear nasal discharge.. Should I consult a vet?
+    - My pet has Occasional sneezing, clear nasal discharge.. What does it mean?
+    - How serious is it if my pet has Occasional sneezing, clear nasal discharge.
+- intent: symptom_inquiry_18
+  examples: |
+    - My pet has Clicking nails on the floor, difficulty walking.. What does it mean?
+    - Symptoms include Clicking nails on the floor, difficulty walking.. Can you help?
+    - My pet is showing signs of Clicking nails on the floor, difficulty walking.. Should I be concerned?
+    - I'm noticing Clicking nails on the floor, difficulty walking. in my pet. What could it indicate?
+    - What does it mean if my pet has Clicking nails on the floor, difficulty walking.?
+    - My pet has Clicking nails on the floor, difficulty walking.. Should I consult a vet?
+    - My pet has Clicking nails on the floor, difficulty walking.. What does it mean?
+    - How serious is it if my pet has Clicking nails on the floor, difficulty walking.
+- intent: symptom_inquiry_19
+  examples: |
+    - My pet has Hiding, pacing, mild whining.. What does it mean?
+    - Symptoms include Hiding, pacing, mild whining.. Can you help?
+    - My pet is showing signs of Hiding, pacing, mild whining.. Should I be concerned?
+    - I'm noticing Hiding, pacing, mild whining. in my pet. What could it indicate?
+    - What does it mean if my pet has Hiding, pacing, mild whining.?
+    - My pet has Hiding, pacing, mild whining.. Should I consult a vet?
+    - My pet has Hiding, pacing, mild whining.. What does it mean?
+    - How serious is it if my pet has Hiding, pacing, mild whining.
+- intent: symptom_inquiry_20
+  examples: |
+    - My pet has Yellowish tartar on teeth, mild bad breath.. What does it mean?
+    - Symptoms include Yellowish tartar on teeth, mild bad breath.. Can you help?
+    - My pet is showing signs of Yellowish tartar on teeth, mild bad breath.. Should I be concerned?
+    - I'm noticing Yellowish tartar on teeth, mild bad breath. in my pet. What could it indicate?
+    - What does it mean if my pet has Yellowish tartar on teeth, mild bad breath.?
+    - My pet has Yellowish tartar on teeth, mild bad breath.. Should I consult a vet?
+    - My pet has Yellowish tartar on teeth, mild bad breath.. What does it mean?
+    - How serious is it if my pet has Yellowish tartar on teeth, mild bad breath.
+- intent: symptom_inquiry_21
+  examples: |
+    - My pet has Behavioral changes, excessive salivation, paralysis.. What does it mean?
+    - Symptoms include Behavioral changes, excessive salivation, paralysis.. Can you help?
+    - My pet is showing signs of Behavioral changes, excessive salivation, paralysis.. Should I be concerned?
+    - I'm noticing Behavioral changes, excessive salivation, paralysis. in my pet. What could it indicate?
+    - What does it mean if my pet has Behavioral changes, excessive salivation, paralysis.?
+    - My pet has Behavioral changes, excessive salivation, paralysis.. Should I consult a vet?
+    - My pet has Behavioral changes, excessive salivation, paralysis.. What does it mean?
+    - How serious is it if my pet has Behavioral changes, excessive salivation, paralysis.
+- intent: symptom_inquiry_22
+  examples: |
+    - My pet has Redness, warmth to the touch, mild discomfort.. What does it mean?
+    - Symptoms include Redness, warmth to the touch, mild discomfort.. Can you help?
+    - My pet is showing signs of Redness, warmth to the touch, mild discomfort.. Should I be concerned?
+    - I'm noticing Redness, warmth to the touch, mild discomfort. in my pet. What could it indicate?
+    - What does it mean if my pet has Redness, warmth to the touch, mild discomfort.?
+    - My pet has Redness, warmth to the touch, mild discomfort.. Should I consult a vet?
+    - My pet has Redness, warmth to the touch, mild discomfort.. What does it mean?
+    - How serious is it if my pet has Redness, warmth to the touch, mild discomfort.
+- intent: symptom_inquiry_23
+  examples: |
+    - My pet has Scooting, licking at the area, mild swelling.. What does it mean?
+    - Symptoms include Scooting, licking at the area, mild swelling.. Can you help?
+    - My pet is showing signs of Scooting, licking at the area, mild swelling.. Should I be concerned?
+    - I'm noticing Scooting, licking at the area, mild swelling. in my pet. What could it indicate?
+    - What does it mean if my pet has Scooting, licking at the area, mild swelling.?
+    - My pet has Scooting, licking at the area, mild swelling.. Should I consult a vet?
+    - My pet has Scooting, licking at the area, mild swelling.. What does it mean?
+    - How serious is it if my pet has Scooting, licking at the area, mild swelling.
+- intent: symptom_inquiry_24
+  examples: |
+    - My pet has Discoloration, mild tenderness.. What does it mean?
+    - Symptoms include Discoloration, mild tenderness.. Can you help?
+    - My pet is showing signs of Discoloration, mild tenderness.. Should I be concerned?
+    - I'm noticing Discoloration, mild tenderness. in my pet. What could it indicate?
+    - What does it mean if my pet has Discoloration, mild tenderness.?
+    - My pet has Discoloration, mild tenderness.. Should I consult a vet?
+    - My pet has Discoloration, mild tenderness.. What does it mean?
+    - How serious is it if my pet has Discoloration, mild tenderness.
+- intent: symptom_inquiry_25
+  examples: |
+    - My pet has Drooling, whining, vomiting.. What does it mean?
+    - Symptoms include Drooling, whining, vomiting.. Can you help?
+    - My pet is showing signs of Drooling, whining, vomiting.. Should I be concerned?
+    - I'm noticing Drooling, whining, vomiting. in my pet. What could it indicate?
+    - What does it mean if my pet has Drooling, whining, vomiting.?
+    - My pet has Drooling, whining, vomiting.. Should I consult a vet?
+    - My pet has Drooling, whining, vomiting.. What does it mean?
+    - How serious is it if my pet has Drooling, whining, vomiting.
+- intent: symptom_inquiry_26
+  examples: |
+    - My pet has Severe vomiting, diarrhea (often bloody), lethargy, fever.. What does it mean?
+    - Symptoms include Severe vomiting, diarrhea (often bloody), lethargy, fever.. Can you help?
+    - My pet is showing signs of Severe vomiting, diarrhea (often bloody), lethargy, fever.. Should I be concerned?
+    - I'm noticing Severe vomiting, diarrhea (often bloody), lethargy, fever. in my pet. What could it indicate?
+    - What does it mean if my pet has Severe vomiting, diarrhea (often bloody), lethargy, fever.?
+    - My pet has Severe vomiting, diarrhea (often bloody), lethargy, fever.. Should I consult a vet?
+    - My pet has Severe vomiting, diarrhea (often bloody), lethargy, fever.. What does it mean?
+    - How serious is it if my pet has Severe vomiting, diarrhea (often bloody), lethargy, fever.
+- intent: symptom_inquiry_27
+  examples: |
+    - My pet has Coughing, fatigue, weight loss, difficulty breathing.. What does it mean?
+    - Symptoms include Coughing, fatigue, weight loss, difficulty breathing.. Can you help?
+    - My pet is showing signs of Coughing, fatigue, weight loss, difficulty breathing.. Should I be concerned?
+    - I'm noticing Coughing, fatigue, weight loss, difficulty breathing. in my pet. What could it indicate?
+    - What does it mean if my pet has Coughing, fatigue, weight loss, difficulty breathing.?
+    - My pet has Coughing, fatigue, weight loss, difficulty breathing.. Should I consult a vet?
+    - My pet has Coughing, fatigue, weight loss, difficulty breathing.. What does it mean?
+    - How serious is it if my pet has Coughing, fatigue, weight loss, difficulty breathing.
+- intent: symptom_inquiry_28
+  examples: |
+    - My pet has Reduced mobility, abnormal posture, abnormal grooming, changes in temperament, muscle atrophy.. What does it mean?
+    - Symptoms include Reduced mobility, abnormal posture, abnormal grooming, changes in temperament, muscle atrophy.. Can you help?
+    - My pet is showing signs of Reduced mobility, abnormal posture, abnormal grooming, changes in temperament, muscle atrophy.. Should I be concerned?
+    - I'm noticing Reduced mobility, abnormal posture, abnormal grooming, changes in temperament, muscle atrophy. in my pet. What could it indicate?
+    - What does it mean if my pet has Reduced mobility, abnormal posture, abnormal grooming, changes in temperament, muscle atrophy.?
+    - My pet has Reduced mobility, abnormal posture, abnormal grooming, changes in temperament, muscle atrophy.. Should I consult a vet?
+    - My pet has Reduced mobility, abnormal posture, abnormal grooming, changes in temperament, muscle atrophy.. What does it mean?
+    - How serious is it if my pet has Reduced mobility, abnormal posture, abnormal grooming, changes in temperament, muscle atrophy.
+- intent: symptom_inquiry_29
+  examples: |
+    - My pet has Shivering, lethargy, cold ears or paws.. What does it mean?
+    - Symptoms include Shivering, lethargy, cold ears or paws.. Can you help?
+    - My pet is showing signs of Shivering, lethargy, cold ears or paws.. Should I be concerned?
+    - I'm noticing Shivering, lethargy, cold ears or paws. in my pet. What could it indicate?
+    - What does it mean if my pet has Shivering, lethargy, cold ears or paws.?
+    - My pet has Shivering, lethargy, cold ears or paws.. Should I consult a vet?
+    - My pet has Shivering, lethargy, cold ears or paws.. What does it mean?
+    - How serious is it if my pet has Shivering, lethargy, cold ears or paws.
+- intent: symptom_inquiry_30
+  examples: |
+    - My pet has Stiffness, difficulty eating or moving, seizures.. What does it mean?
+    - Symptoms include Stiffness, difficulty eating or moving, seizures.. Can you help?
+    - My pet is showing signs of Stiffness, difficulty eating or moving, seizures.. Should I be concerned?
+    - I'm noticing Stiffness, difficulty eating or moving, seizures. in my pet. What could it indicate?
+    - What does it mean if my pet has Stiffness, difficulty eating or moving, seizures.?
+    - My pet has Stiffness, difficulty eating or moving, seizures.. Should I consult a vet?
+    - My pet has Stiffness, difficulty eating or moving, seizures.. What does it mean?
+    - How serious is it if my pet has Stiffness, difficulty eating or moving, seizures.
+- intent: symptom_inquiry_31
+  examples: |
+    - My pet has Panting, drooling, mild weakness.. What does it mean?
+    - Symptoms include Panting, drooling, mild weakness.. Can you help?
+    - My pet is showing signs of Panting, drooling, mild weakness.. Should I be concerned?
+    - I'm noticing Panting, drooling, mild weakness. in my pet. What could it indicate?
+    - What does it mean if my pet has Panting, drooling, mild weakness.?
+    - My pet has Panting, drooling, mild weakness.. Should I consult a vet?
+    - My pet has Panting, drooling, mild weakness.. What does it mean?
+    - How serious is it if my pet has Panting, drooling, mild weakness.
+- intent: symptom_inquiry_32
+  examples: |
+    - My pet has Limping, mild swelling, reluctance to move.. What does it mean?
+    - Symptoms include Limping, mild swelling, reluctance to move.. Can you help?
+    - My pet is showing signs of Limping, mild swelling, reluctance to move.. Should I be concerned?
+    - I'm noticing Limping, mild swelling, reluctance to move. in my pet. What could it indicate?
+    - What does it mean if my pet has Limping, mild swelling, reluctance to move.?
+    - My pet has Limping, mild swelling, reluctance to move.. Should I consult a vet?
+    - My pet has Limping, mild swelling, reluctance to move.. What does it mean?
+    - How serious is it if my pet has Limping, mild swelling, reluctance to move.
+- intent: symptom_inquiry_33
+  examples: |
+    - My pet has Mild redness, odor, head shaking, scratching at ears.. What does it mean?
+    - Symptoms include Mild redness, odor, head shaking, scratching at ears.. Can you help?
+    - My pet is showing signs of Mild redness, odor, head shaking, scratching at ears.. Should I be concerned?
+    - I'm noticing Mild redness, odor, head shaking, scratching at ears. in my pet. What could it indicate?
+    - What does it mean if my pet has Mild redness, odor, head shaking, scratching at ears.?
+    - My pet has Mild redness, odor, head shaking, scratching at ears.. Should I consult a vet?
+    - My pet has Mild redness, odor, head shaking, scratching at ears.. What does it mean?
+    - How serious is it if my pet has Mild redness, odor, head shaking, scratching at ears.
+- intent: symptom_inquiry_34
+  examples: |
+    - My pet has Frequent urination, straining, small puddles of urine.. What does it mean?
+    - Symptoms include Frequent urination, straining, small puddles of urine.. Can you help?
+    - My pet is showing signs of Frequent urination, straining, small puddles of urine.. Should I be concerned?
+    - I'm noticing Frequent urination, straining, small puddles of urine. in my pet. What could it indicate?
+    - What does it mean if my pet has Frequent urination, straining, small puddles of urine.?
+    - My pet has Frequent urination, straining, small puddles of urine.. Should I consult a vet?
+    - My pet has Frequent urination, straining, small puddles of urine.. What does it mean?
+    - How serious is it if my pet has Frequent urination, straining, small puddles of urine.
+- intent: symptom_inquiry_35
+  examples: |
+    - My pet has Pale gums, weakness, rapid breathing, collapse.. What does it mean?
+    - Symptoms include Pale gums, weakness, rapid breathing, collapse.. Can you help?
+    - My pet is showing signs of Pale gums, weakness, rapid breathing, collapse.. Should I be concerned?
+    - I'm noticing Pale gums, weakness, rapid breathing, collapse. in my pet. What could it indicate?
+    - What does it mean if my pet has Pale gums, weakness, rapid breathing, collapse.?
+    - My pet has Pale gums, weakness, rapid breathing, collapse.. Should I consult a vet?
+    - My pet has Pale gums, weakness, rapid breathing, collapse.. What does it mean?
+    - How serious is it if my pet has Pale gums, weakness, rapid breathing, collapse.
+- intent: symptom_inquiry_36
+  examples: |
+    - My pet has Dry gums, less elastic skin, reduced energy.. What does it mean?
+    - Symptoms include Dry gums, less elastic skin, reduced energy.. Can you help?
+    - My pet is showing signs of Dry gums, less elastic skin, reduced energy.. Should I be concerned?
+    - I'm noticing Dry gums, less elastic skin, reduced energy. in my pet. What could it indicate?
+    - What does it mean if my pet has Dry gums, less elastic skin, reduced energy.?
+    - My pet has Dry gums, less elastic skin, reduced energy.. Should I consult a vet?
+    - My pet has Dry gums, less elastic skin, reduced energy.. What does it mean?
+    - How serious is it if my pet has Dry gums, less elastic skin, reduced energy.
+- intent: symptom_inquiry_37
+  examples: |
+    - My pet has Small patches of hair loss, no open sores.. What does it mean?
+    - Symptoms include Small patches of hair loss, no open sores.. Can you help?
+    - My pet is showing signs of Small patches of hair loss, no open sores.. Should I be concerned?
+    - I'm noticing Small patches of hair loss, no open sores. in my pet. What could it indicate?
+    - What does it mean if my pet has Small patches of hair loss, no open sores.?
+    - My pet has Small patches of hair loss, no open sores.. Should I consult a vet?
+    - My pet has Small patches of hair loss, no open sores.. What does it mean?
+    - How serious is it if my pet has Small patches of hair loss, no open sores.
+- intent: symptom_inquiry_38
+  examples: |
+    - My pet has Fever, vomiting, muscle pain, jaundice.. What does it mean?
+    - Symptoms include Fever, vomiting, muscle pain, jaundice.. Can you help?
+    - My pet is showing signs of Fever, vomiting, muscle pain, jaundice.. Should I be concerned?
+    - I'm noticing Fever, vomiting, muscle pain, jaundice. in my pet. What could it indicate?
+    - What does it mean if my pet has Fever, vomiting, muscle pain, jaundice.?
+    - My pet has Fever, vomiting, muscle pain, jaundice.. Should I consult a vet?
+    - My pet has Fever, vomiting, muscle pain, jaundice.. What does it mean?
+    - How serious is it if my pet has Fever, vomiting, muscle pain, jaundice.
+- intent: symptom_inquiry_39
+  examples: |
+    - My pet has Avoidance of food/water bowls, nervous behavior.. What does it mean?
+    - Symptoms include Avoidance of food/water bowls, nervous behavior.. Can you help?
+    - My pet is showing signs of Avoidance of food/water bowls, nervous behavior.. Should I be concerned?
+    - I'm noticing Avoidance of food/water bowls, nervous behavior. in my pet. What could it indicate?
+    - What does it mean if my pet has Avoidance of food/water bowls, nervous behavior.?
+    - My pet has Avoidance of food/water bowls, nervous behavior.. Should I consult a vet?
+    - My pet has Avoidance of food/water bowls, nervous behavior.. What does it mean?
+    - How serious is it if my pet has Avoidance of food/water bowls, nervous behavior.
+- intent: symptom_inquiry_40
+  examples: |
+    - My pet has Coarse, dry fur and mild shedding.. What does it mean?
+    - Symptoms include Coarse, dry fur and mild shedding.. Can you help?
+    - My pet is showing signs of Coarse, dry fur and mild shedding.. Should I be concerned?
+    - I'm noticing Coarse, dry fur and mild shedding. in my pet. What could it indicate?
+    - What does it mean if my pet has Coarse, dry fur and mild shedding.?
+    - My pet has Coarse, dry fur and mild shedding.. Should I consult a vet?
+    - My pet has Coarse, dry fur and mild shedding.. What does it mean?
+    - How serious is it if my pet has Coarse, dry fur and mild shedding.
+- intent: symptom_inquiry_41
+  examples: |
+    - My pet has Loud and continuous cough. What does it mean?
+    - Symptoms include Loud and continuous cough. Can you help?
+    - My pet is showing signs of Loud and continuous cough. Should I be concerned?
+    - I'm noticing Loud and continuous cough in my pet. What could it indicate?
+    - What does it mean if my pet has Loud and continuous cough?
+    - My pet has Loud and continuous cough. Should I consult a vet?
+    - My pet has Loud and continuous cough. What does it mean?
+    - How serious is it if my pet has Loud and continuous cough
+- intent: symptom_inquiry_42
+  examples: |
+    - My pet has Vomiting, diarrhea, lethargy, abdominal pain(dogs resist to touched their stomach), dehydration.. What does it mean?
+    - Symptoms include Vomiting, diarrhea, lethargy, abdominal pain(dogs resist to touched their stomach), dehydration.. Can you help?
+    - My pet is showing signs of Vomiting, diarrhea, lethargy, abdominal pain(dogs resist to touched their stomach), dehydration.. Should I be concerned?
+    - I'm noticing Vomiting, diarrhea, lethargy, abdominal pain(dogs resist to touched their stomach), dehydration. in my pet. What could it indicate?
+    - What does it mean if my pet has Vomiting, diarrhea, lethargy, abdominal pain(dogs resist to touched their stomach), dehydration.?
+    - My pet has Vomiting, diarrhea, lethargy, abdominal pain(dogs resist to touched their stomach), dehydration.. Should I consult a vet?
+    - My pet has Vomiting, diarrhea, lethargy, abdominal pain(dogs resist to touched their stomach), dehydration.. What does it mean?
+    - How serious is it if my pet has Vomiting, diarrhea, lethargy, abdominal pain(dogs resist to touched their stomach), dehydration.
+- intent: symptom_inquiry_43
+  examples: |
+    - My pet has Flaky skin, odor, greasy fur. What does it mean?
+    - Symptoms include Flaky skin, odor, greasy fur. Can you help?
+    - My pet is showing signs of Flaky skin, odor, greasy fur. Should I be concerned?
+    - I'm noticing Flaky skin, odor, greasy fur in my pet. What could it indicate?
+    - What does it mean if my pet has Flaky skin, odor, greasy fur?
+    - My pet has Flaky skin, odor, greasy fur. Should I consult a vet?
+    - My pet has Flaky skin, odor, greasy fur. What does it mean?
+    - How serious is it if my pet has Flaky skin, odor, greasy fur
+- intent: symptom_inquiry_44
+  examples: |
+    - My pet has Red, swollen gums, bad breath and difficulty eating. What does it mean?
+    - Symptoms include Red, swollen gums, bad breath and difficulty eating. Can you help?
+    - My pet is showing signs of Red, swollen gums, bad breath and difficulty eating. Should I be concerned?
+    - I'm noticing Red, swollen gums, bad breath and difficulty eating in my pet. What could it indicate?
+    - What does it mean if my pet has Red, swollen gums, bad breath and difficulty eating?
+    - My pet has Red, swollen gums, bad breath and difficulty eating. Should I consult a vet?
+    - My pet has Red, swollen gums, bad breath and difficulty eating. What does it mean?
+    - How serious is it if my pet has Red, swollen gums, bad breath and difficulty eating
+- intent: symptom_inquiry_45
+  examples: |
+    - My pet has Small, firm lumps under the skin, sometimes hair loss or irritation.. What does it mean?
+    - Symptoms include Small, firm lumps under the skin, sometimes hair loss or irritation.. Can you help?
+    - My pet is showing signs of Small, firm lumps under the skin, sometimes hair loss or irritation.. Should I be concerned?
+    - I'm noticing Small, firm lumps under the skin, sometimes hair loss or irritation. in my pet. What could it indicate?
+    - What does it mean if my pet has Small, firm lumps under the skin, sometimes hair loss or irritation.?
+    - My pet has Small, firm lumps under the skin, sometimes hair loss or irritation.. Should I consult a vet?
+    - My pet has Small, firm lumps under the skin, sometimes hair loss or irritation.. What does it mean?
+    - How serious is it if my pet has Small, firm lumps under the skin, sometimes hair loss or irritation.

@@ -1,0 +1,491 @@
+version: "3.1"
+
+actions:
+  - action_fallback
+  - action_custom_fallback
+
+intents:
+  - bot_challenge
+  - thanks
+  - fallback
+  - goodbye
+  - action_inquiry
+  - symptom_inquiry_1
+  - symptom_inquiry_2
+  - symptom_inquiry_3
+  - symptom_inquiry_4
+  - symptom_inquiry_5
+  - symptom_inquiry_6
+  - symptom_inquiry_7
+  - symptom_inquiry_8
+  - symptom_inquiry_9
+  - symptom_inquiry_10
+  - symptom_inquiry_11
+  - symptom_inquiry_12
+  - symptom_inquiry_13
+  - symptom_inquiry_14
+  - symptom_inquiry_15
+  - symptom_inquiry_16
+  - symptom_inquiry_17
+  - symptom_inquiry_18
+  - symptom_inquiry_19
+  - symptom_inquiry_20
+  - symptom_inquiry_21
+  - symptom_inquiry_22
+  - symptom_inquiry_23
+  - symptom_inquiry_24
+  - symptom_inquiry_25
+  - symptom_inquiry_26
+  - symptom_inquiry_27
+  - symptom_inquiry_28
+  - symptom_inquiry_29
+  - symptom_inquiry_30
+  - symptom_inquiry_31
+  - symptom_inquiry_32
+  - symptom_inquiry_33
+  - symptom_inquiry_34
+  - symptom_inquiry_35
+  - symptom_inquiry_36
+  - symptom_inquiry_37
+  - symptom_inquiry_38
+  - symptom_inquiry_39
+  - symptom_inquiry_40
+  - symptom_inquiry_41
+  - symptom_inquiry_42
+  - symptom_inquiry_43
+  - symptom_inquiry_44
+  - symptom_inquiry_45
+
+slots:
+  symptoms:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+  diseases:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+  description:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+  first_aid:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+  products:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+  urgency:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+
+responses:
+  utter_bot_identity:
+    - text: "I am VetPal a virtual assistant here to help you."
+  utter_you_are_welcome:
+    - text: "You are welcome!"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+  utter_symptom_inquiry_1:
+    - text: Your pet might have Feline panleukopenia. A viral cat disease similar to parvovirus in dogs. can be spread through direct and indirect contact to feces.
+  utter_action_inquiry_1:
+    - text: |
+        First Aid Tips:
+          - No information available..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_2:
+    - text: Your pet might have Ear mites. Microscopic parasites in the ear canal that cause irritation.
+  utter_action_inquiry_2:
+    - text: |
+        First Aid Tips:
+          - Clean ears gently with a vet-recommended ear cleanser.
+          - apply over-the-counter ear mite medication..
+        Products to Try: Play pets ear doctor ear cleanser and gold medal pets ear mite & tick control
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_3:
+    - text: Your pet might have Minor cuts or scratches. Superficial wounds from play or accidents.
+  utter_action_inquiry_3:
+    - text: |
+        First Aid Tips:
+          - Clean the wound with warm water and mild antiseptic.
+          - apply pet-safe antibiotic ointment.
+          - bandage lightly if necessary..
+        Products to Try: Remedy + recovery medicated antiseptic, remedy + recovery's liquid bandage
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_4:
+    - text: Your pet might have Upset stomach (mild gastroenteritis). A temporary digestive disturbance.
+  utter_action_inquiry_4:
+    - text: |
+        First Aid Tips:
+          - Provide plain boiled chicken and rice for 1–2 days.
+          - ensure access to fresh water to avoid dehydration..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_5:
+    - text: Your pet might have Hot spots (moist dermatitis). Localized skin irritation, often caused by licking or scratching.
+  utter_action_inquiry_5:
+    - text: |
+        First Aid Tips:
+          - Trim fur around the area to keep it dry.
+          - clean with an antiseptic solution.
+          - apply hydrocortisone spray or cream as directed..
+        Products to Try: Remedy + recovery medicated antiseptic, remedy + recovery hydrocortisone lotion
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_6:
+    - text: Your pet might have Mild allergic reactions. Reaction to environmental allergens, food, or insect bites.
+  utter_action_inquiry_6:
+    - text: |
+        First Aid Tips:
+          - Administer over-the-counter antihistamines like benadryl (dosage per vet's advice).
+          - remove the allergen if identified..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_7:
+    - text: Your pet might have Dry or cracked paw pads. Common in extreme weather conditions or from walking on rough surfaces.
+  utter_action_inquiry_7:
+    - text: |
+        First Aid Tips:
+          - Clean paws gently with warm water.
+          - apply a pet-safe paw balm or coconut oil..
+        Products to Try: Safe house natural pet care solutions faw balm
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_8:
+    - text: Your pet might have Hairballs. A natural result of grooming, causing occasional vomiting. commons in cats.
+  utter_action_inquiry_8:
+    - text: |
+        First Aid Tips:
+          - Provide hairball remedy paste or treats.
+          - increase fiber intake (add pumpkin to their diet).
+          - brush regularly to reduce loose fur..
+        Products to Try: Meow mix hairball control
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_9:
+    - text: Your pet might have Kidney failure. A life-threatening condition where the kidneys fail to filter waste.
+  utter_action_inquiry_9:
+    - text: |
+        First Aid Tips:
+          - No information available..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_10:
+    - text: Your pet might have Teething. Discomfort during the growth of new teeth. mostly happens to cats and dogs
+  utter_action_inquiry_10:
+    - text: |
+        First Aid Tips:
+          - Provide soft chew toys or frozen carrots.
+          - rub gums gently with a cool, wet cloth..
+        Products to Try: Pet toy colorful rope knot ball teething chew toy
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_11:
+    - text: Your pet might have Dandruff (dry skin). Flaky skin caused by dryness, diet, or mild allergies.
+  utter_action_inquiry_11:
+    - text: |
+        First Aid Tips:
+          - Add omega-3 fatty acids or fish oil to their diet.
+          - bathe with a moisturizing, pet-safe shampoo..
+        Products to Try: Pet one wild salmon steak
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_12:
+    - text: Your pet might have Distemper. A viral disease related to human measles that affects domestic dogs as well as several species of wildlife
+  utter_action_inquiry_12:
+    - text: |
+        First Aid Tips:
+          - No information available..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_13:
+    - text: Your pet might have Conjunctivitis (mild). Inflammation of the eye's conjunctiva, often from irritation or dust.
+  utter_action_inquiry_13:
+    - text: |
+        First Aid Tips:
+          - Flush eyes with pet-safe saline solution.
+          - keep the area clean and monitor for improvement..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_14:
+    - text: Your pet might have Minor skin irritations. Itchy or red skin caused by mild exposure to irritants. mainly from from plants or mild allergies.
+  utter_action_inquiry_14:
+    - text: |
+        First Aid Tips:
+          - Rinse affected areas with cool water.
+          - apply aloe vera gel or a vet-approved soothing spray..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_15:
+    - text: Your pet might have Diabetes. A chronic condition causing high blood sugar levels.
+  utter_action_inquiry_15:
+    - text: |
+        First Aid Tips:
+          - No information available..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_16:
+    - text: Your pet might have Obesity (early stage). Excess weight gain due to overeating or lack of exercise.
+  utter_action_inquiry_16:
+    - text: |
+        First Aid Tips:
+          - Adjust portion sizes and switch to a lower-calorie diet.
+          - increase daily exercise and playtime..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_17:
+    - text: Your pet might have Mild sneezing or nasal irritation. Often caused by dust, pollen, or mild colds.
+  utter_action_inquiry_17:
+    - text: |
+        First Aid Tips:
+          - Use a humidifier to moisten air.
+          - keep the pet away from irritants (dust, smoke)..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_18:
+    - text: Your pet might have Overgrown nails. Long nails can cause discomfort or improper walking.
+  utter_action_inquiry_18:
+    - text: |
+        First Aid Tips:
+          - Trim nails with a pet nail clipper.
+          - file sharp edges with an emery board..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_19:
+    - text: Your pet might have Minor stress or anxiety. Temporary stress caused by changes in environment or routine.
+  utter_action_inquiry_19:
+    - text: |
+        First Aid Tips:
+          - Provide a quiet, safe space.
+          - use calming sprays or treats.
+          - engage in calming activities like petting or play..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_20:
+    - text: Your pet might have Minor dental tartar. Early-stage plaque buildup on teeth.
+  utter_action_inquiry_20:
+    - text: |
+        First Aid Tips:
+          - Brush teeth with pet-safe toothpaste.
+          - provide dental chews or toys..
+        Products to Try: Virbac enzymatic toothpaste
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_21:
+    - text: Your pet might have Rabies. A fatal viral disease transmitted via bites from infected animals.
+  utter_action_inquiry_21:
+    - text: |
+        First Aid Tips:
+          - No information available..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_22:
+    - text: Your pet might have Sunburn. Mild skin irritation from sun exposure, common in light-colored pets.
+  utter_action_inquiry_22:
+    - text: |
+        First Aid Tips:
+          - Apply pet-safe sunscreen to exposed areas.
+          - avoid direct sun exposure during peak hours..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_23:
+    - text: Your pet might have Anal gland issues. Glands near the anus become slightly clogged.
+  utter_action_inquiry_23:
+    - text: |
+        First Aid Tips:
+          - Use a warm compress on the area.
+          - ensure a high-fiber diet to promote natural emptying..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_24:
+    - text: Your pet might have Bruising. Small, non-painful bruises from minor trauma.
+  utter_action_inquiry_24:
+    - text: |
+        First Aid Tips:
+          - Apply a cold compress to reduce swelling..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_25:
+    - text: Your pet might have Motion sickness. Discomfort during car rides or travel.
+  utter_action_inquiry_25:
+    - text: |
+        First Aid Tips:
+          - Avoid feeding before travel.
+          - use anti-nausea treats or medications as directed..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_26:
+    - text: Your pet might have Parvovirus. A highly contagious viral infection commonly among dogs. spread through direct or indirect contact with feces.
+  utter_action_inquiry_26:
+    - text: |
+        First Aid Tips:
+          - No information available..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_27:
+    - text: Your pet might have Heartworm disease. A parasitic disease spread by mosquitoes.
+  utter_action_inquiry_27:
+    - text: |
+        First Aid Tips:
+          - No information available..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_28:
+    - text: Your pet might have Osteoarthritis and rheumatoid arthritis. Arthritis occurs when the cartilage within a joint becomes damaged. eventually an arthritic joint becomes inflamed and painful.
+  utter_action_inquiry_28:
+    - text: |
+        First Aid Tips:
+          - Exercise is important as it maintains strength in the muscles.
+          - pharmaceuticals like nonsteroidal anti-inflammatories can be used as treatment.
+          - diet, acupuncture, and water therapy are effictive too..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_29:
+    - text: Your pet might have Hypothermia. A drop in body temperature from exposure to cold weather.
+  utter_action_inquiry_29:
+    - text: |
+        First Aid Tips:
+          - Warm the pet gradually with blankets.
+          - offer warm (not hot) water to drink..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_30:
+    - text: Your pet might have Tetanus (lockjaw). A bacterial infection from wounds, causing muscle stiffness.
+  utter_action_inquiry_30:
+    - text: |
+        First Aid Tips:
+          - No information available..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_31:
+    - text: Your pet might have Hyperthermia (heat exhaustion). Overheating due to high temperatures or excessive activity.
+  utter_action_inquiry_31:
+    - text: |
+        First Aid Tips:
+          - Move to a cooler area.
+          - offer small amounts of cool water.
+          - use a damp cloth to cool the body..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_32:
+    - text: Your pet might have Sprains or strains. Slight muscle or ligament injury from play or jumping.
+  utter_action_inquiry_32:
+    - text: |
+        First Aid Tips:
+          - Rest the pet for 1–2 days.
+          - apply a cold compress to reduce swelling..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_33:
+    - text: Your pet might have Ear infections. Mild inflammation of the ear canal.
+  utter_action_inquiry_33:
+    - text: |
+        First Aid Tips:
+          - Clean the ear with a vet-recommended ear cleaner.
+          - monitor for worsening symptoms..
+        Products to Try: Vethub otic pet ear cleanser
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_34:
+    - text: Your pet might have Bladder irritation. Temporary discomfort due to mild urinary issues.
+  utter_action_inquiry_34:
+    - text: |
+        First Aid Tips:
+          - Increase water intake.
+          - provide wet food to maintain hydration..
+        Products to Try: Whiskas tuna pouch wet cat food, pedigree dog food wet food
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_35:
+    - text: Your pet might have Anemia. Low red blood cell levels due to trauma, parasites, or disease.
+  utter_action_inquiry_35:
+    - text: |
+        First Aid Tips:
+          - No information available..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_36:
+    - text: Your pet might have Dehydration. Insufficient water intake, often after mild activity or heat exposure.
+  utter_action_inquiry_36:
+    - text: |
+        First Aid Tips:
+          - Offer fresh, clean water frequently.
+          - use electrolyte solutions for pets if needed..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_37:
+    - text: Your pet might have Hair loss. Non-serious hair thinning due to grooming, mild allergies, or seasonal changes.
+  utter_action_inquiry_37:
+    - text: |
+        First Aid Tips:
+          - Brush regularly to promote healthy skin.
+          - address allergens if identified..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_38:
+    - text: Your pet might have Leptospirosis. A bacterial infection affecting the kidneys and liver, transmissible to humans.
+  utter_action_inquiry_38:
+    - text: |
+        First Aid Tips:
+          - No information available..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_39:
+    - text: Your pet might have Whisker fatigue. Stress from overstimulation of whiskers.
+  utter_action_inquiry_39:
+    - text: |
+        First Aid Tips:
+          - Use wide, shallow bowls for food and water..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_40:
+    - text: Your pet might have Dull coat. Lackluster fur due to poor nutrition or mild dehydration.
+  utter_action_inquiry_40:
+    - text: |
+        First Aid Tips:
+          - Add fish oil or omega-3 supplements to the diet.
+          - brush regularly to distribute natural oils..
+        Products to Try: Pet one wild salmon steak
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_41:
+    - text: Your pet might have Kennel cough. An infectious form of canine bronchitis characterized by a harsh, hacking cough that many people describe as sounding like something is “stuck in the throat.”
+  utter_action_inquiry_41:
+    - text: |
+        First Aid Tips:
+          - Give cough suppressants..
+        Products to Try: Pneumex respiratory comfort
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_42:
+    - text: Your pet might have Acute gastroenteritis (stomach flu). Acute gastroenteritis is a sudden disruption in the digestive system’s normal function. it’s usually caused by viruses, bacteria, or parasites that enter the digestive system via contaminated external sources or due to natural causes. in some cases, it can lead to dehydration or severe illness, requiring hospitalization.
+  utter_action_inquiry_42:
+    - text: |
+        First Aid Tips:
+          - No information available..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_43:
+    - text: Your pet might have Seborrhea. Excessive oil production on the skin
+  utter_action_inquiry_43:
+    - text: |
+        First Aid Tips:
+          - Use medicated kind of shampoos.
+        Products to Try: Sentry non-toxic dog and cat herbal shampoo
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_44:
+    - text: Your pet might have Feline gingivitis. Inflammation of the gums, might lead to more severe dental disease.
+  utter_action_inquiry_44:
+    - text: |
+        First Aid Tips:
+          - Brush your cat's teeth regularly offer dental treats.
+        Products to Try: Pedigree dentastix, brit care functional semi-moist snack dental cat treats
+        Next Steps: If symptoms persist, consult a veterinarian immediately.
+  utter_symptom_inquiry_45:
+    - text: Your pet might have Folicular cyst. A benign cyst commonly on dogs that is formed in the hair follicles, oftern appearing on the skin
+  utter_action_inquiry_45:
+    - text: |
+        First Aid Tips:
+          - Avoid bursting the cyst of your pet if the cyst bursts or becomes infected, clean it and seek veterinary care for proper treatment..
+        Products to Try: No information available.
+        Next Steps: If symptoms persist, consult a veterinarian immediately.

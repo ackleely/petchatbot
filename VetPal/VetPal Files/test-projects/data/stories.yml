@@ -1,0 +1,417 @@
+version: "3.1"
+stories:
+- story: Fallback response
+  steps:
+  - intent: fallback
+  - action: action_fallback
+- story: User asks if bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_identity
+  - intent: thanks
+  - action: utter_you_are_welcome
+- story: Provide advice for Feline panleukopenia
+  steps:
+  - intent: symptom_inquiry_1
+  - action: utter_symptom_inquiry_1
+- story: Follow-up advice for Feline panleukopenia
+  steps:
+  - action: utter_symptom_inquiry_1
+  - intent: action_inquiry
+  - action: utter_action_inquiry_1
+- story: Provide advice for Ear mites
+  steps:
+  - intent: symptom_inquiry_2
+  - action: utter_symptom_inquiry_2
+- story: Follow-up advice for Ear mites
+  steps:
+  - action: utter_symptom_inquiry_2
+  - intent: action_inquiry
+  - action: utter_action_inquiry_2
+- story: Provide advice for Minor cuts or scratches
+  steps:
+  - intent: symptom_inquiry_3
+  - action: utter_symptom_inquiry_3
+- story: Follow-up advice for Minor cuts or scratches
+  steps:
+  - action: utter_symptom_inquiry_3
+  - intent: action_inquiry
+  - action: utter_action_inquiry_3
+- story: Provide advice for Upset stomach (mild gastroenteritis)
+  steps:
+  - intent: symptom_inquiry_4
+  - action: utter_symptom_inquiry_4
+- story: Follow-up advice for Upset stomach (mild gastroenteritis)
+  steps:
+  - action: utter_symptom_inquiry_4
+  - intent: action_inquiry
+  - action: utter_action_inquiry_4
+- story: Provide advice for Hot spots (moist dermatitis)
+  steps:
+  - intent: symptom_inquiry_5
+  - action: utter_symptom_inquiry_5
+- story: Follow-up advice for Hot spots (moist dermatitis)
+  steps:
+  - action: utter_symptom_inquiry_5
+  - intent: action_inquiry
+  - action: utter_action_inquiry_5
+- story: Provide advice for Mild allergic reactions
+  steps:
+  - intent: symptom_inquiry_6
+  - action: utter_symptom_inquiry_6
+- story: Follow-up advice for Mild allergic reactions
+  steps:
+  - action: utter_symptom_inquiry_6
+  - intent: action_inquiry
+  - action: utter_action_inquiry_6
+- story: Provide advice for Dry or cracked paw pads
+  steps:
+  - intent: symptom_inquiry_7
+  - action: utter_symptom_inquiry_7
+- story: Follow-up advice for Dry or cracked paw pads
+  steps:
+  - action: utter_symptom_inquiry_7
+  - intent: action_inquiry
+  - action: utter_action_inquiry_7
+- story: Provide advice for Hairballs
+  steps:
+  - intent: symptom_inquiry_8
+  - action: utter_symptom_inquiry_8
+- story: Follow-up advice for Hairballs
+  steps:
+  - action: utter_symptom_inquiry_8
+  - intent: action_inquiry
+  - action: utter_action_inquiry_8
+- story: Provide advice for Kidney failure
+  steps:
+  - intent: symptom_inquiry_9
+  - action: utter_symptom_inquiry_9
+- story: Follow-up advice for Kidney failure
+  steps:
+  - action: utter_symptom_inquiry_9
+  - intent: action_inquiry
+  - action: utter_action_inquiry_9
+- story: Provide advice for Teething
+  steps:
+  - intent: symptom_inquiry_10
+  - action: utter_symptom_inquiry_10
+- story: Follow-up advice for Teething
+  steps:
+  - action: utter_symptom_inquiry_10
+  - intent: action_inquiry
+  - action: utter_action_inquiry_10
+- story: Provide advice for Dandruff (dry skin)
+  steps:
+  - intent: symptom_inquiry_11
+  - action: utter_symptom_inquiry_11
+- story: Follow-up advice for Dandruff (dry skin)
+  steps:
+  - action: utter_symptom_inquiry_11
+  - intent: action_inquiry
+  - action: utter_action_inquiry_11
+- story: Provide advice for Distemper
+  steps:
+  - intent: symptom_inquiry_12
+  - action: utter_symptom_inquiry_12
+- story: Follow-up advice for Distemper
+  steps:
+  - action: utter_symptom_inquiry_12
+  - intent: action_inquiry
+  - action: utter_action_inquiry_12
+- story: Provide advice for Conjunctivitis (mild)
+  steps:
+  - intent: symptom_inquiry_13
+  - action: utter_symptom_inquiry_13
+- story: Follow-up advice for Conjunctivitis (mild)
+  steps:
+  - action: utter_symptom_inquiry_13
+  - intent: action_inquiry
+  - action: utter_action_inquiry_13
+- story: Provide advice for Minor skin irritations
+  steps:
+  - intent: symptom_inquiry_14
+  - action: utter_symptom_inquiry_14
+- story: Follow-up advice for Minor skin irritations
+  steps:
+  - action: utter_symptom_inquiry_14
+  - intent: action_inquiry
+  - action: utter_action_inquiry_14
+- story: Provide advice for Diabetes
+  steps:
+  - intent: symptom_inquiry_15
+  - action: utter_symptom_inquiry_15
+- story: Follow-up advice for Diabetes
+  steps:
+  - action: utter_symptom_inquiry_15
+  - intent: action_inquiry
+  - action: utter_action_inquiry_15
+- story: Provide advice for Obesity (early stage)
+  steps:
+  - intent: symptom_inquiry_16
+  - action: utter_symptom_inquiry_16
+- story: Follow-up advice for Obesity (early stage)
+  steps:
+  - action: utter_symptom_inquiry_16
+  - intent: action_inquiry
+  - action: utter_action_inquiry_16
+- story: Provide advice for Mild sneezing or nasal irritation
+  steps:
+  - intent: symptom_inquiry_17
+  - action: utter_symptom_inquiry_17
+- story: Follow-up advice for Mild sneezing or nasal irritation
+  steps:
+  - action: utter_symptom_inquiry_17
+  - intent: action_inquiry
+  - action: utter_action_inquiry_17
+- story: Provide advice for Overgrown nails
+  steps:
+  - intent: symptom_inquiry_18
+  - action: utter_symptom_inquiry_18
+- story: Follow-up advice for Overgrown nails
+  steps:
+  - action: utter_symptom_inquiry_18
+  - intent: action_inquiry
+  - action: utter_action_inquiry_18
+- story: Provide advice for Minor stress or anxiety
+  steps:
+  - intent: symptom_inquiry_19
+  - action: utter_symptom_inquiry_19
+- story: Follow-up advice for Minor stress or anxiety
+  steps:
+  - action: utter_symptom_inquiry_19
+  - intent: action_inquiry
+  - action: utter_action_inquiry_19
+- story: Provide advice for Minor dental tartar
+  steps:
+  - intent: symptom_inquiry_20
+  - action: utter_symptom_inquiry_20
+- story: Follow-up advice for Minor dental tartar
+  steps:
+  - action: utter_symptom_inquiry_20
+  - intent: action_inquiry
+  - action: utter_action_inquiry_20
+- story: Provide advice for Rabies
+  steps:
+  - intent: symptom_inquiry_21
+  - action: utter_symptom_inquiry_21
+- story: Follow-up advice for Rabies
+  steps:
+  - action: utter_symptom_inquiry_21
+  - intent: action_inquiry
+  - action: utter_action_inquiry_21
+- story: Provide advice for Sunburn
+  steps:
+  - intent: symptom_inquiry_22
+  - action: utter_symptom_inquiry_22
+- story: Follow-up advice for Sunburn
+  steps:
+  - action: utter_symptom_inquiry_22
+  - intent: action_inquiry
+  - action: utter_action_inquiry_22
+- story: Provide advice for Anal gland issues
+  steps:
+  - intent: symptom_inquiry_23
+  - action: utter_symptom_inquiry_23
+- story: Follow-up advice for Anal gland issues
+  steps:
+  - action: utter_symptom_inquiry_23
+  - intent: action_inquiry
+  - action: utter_action_inquiry_23
+- story: Provide advice for Bruising
+  steps:
+  - intent: symptom_inquiry_24
+  - action: utter_symptom_inquiry_24
+- story: Follow-up advice for Bruising
+  steps:
+  - action: utter_symptom_inquiry_24
+  - intent: action_inquiry
+  - action: utter_action_inquiry_24
+- story: Provide advice for Motion sickness
+  steps:
+  - intent: symptom_inquiry_25
+  - action: utter_symptom_inquiry_25
+- story: Follow-up advice for Motion sickness
+  steps:
+  - action: utter_symptom_inquiry_25
+  - intent: action_inquiry
+  - action: utter_action_inquiry_25
+- story: Provide advice for Parvovirus
+  steps:
+  - intent: symptom_inquiry_26
+  - action: utter_symptom_inquiry_26
+- story: Follow-up advice for Parvovirus
+  steps:
+  - action: utter_symptom_inquiry_26
+  - intent: action_inquiry
+  - action: utter_action_inquiry_26
+- story: Provide advice for Heartworm disease
+  steps:
+  - intent: symptom_inquiry_27
+  - action: utter_symptom_inquiry_27
+- story: Follow-up advice for Heartworm disease
+  steps:
+  - action: utter_symptom_inquiry_27
+  - intent: action_inquiry
+  - action: utter_action_inquiry_27
+- story: Provide advice for Osteoarthritis and rheumatoid arthritis
+  steps:
+  - intent: symptom_inquiry_28
+  - action: utter_symptom_inquiry_28
+- story: Follow-up advice for Osteoarthritis and rheumatoid arthritis
+  steps:
+  - action: utter_symptom_inquiry_28
+  - intent: action_inquiry
+  - action: utter_action_inquiry_28
+- story: Provide advice for Hypothermia
+  steps:
+  - intent: symptom_inquiry_29
+  - action: utter_symptom_inquiry_29
+- story: Follow-up advice for Hypothermia
+  steps:
+  - action: utter_symptom_inquiry_29
+  - intent: action_inquiry
+  - action: utter_action_inquiry_29
+- story: Provide advice for Tetanus (lockjaw)
+  steps:
+  - intent: symptom_inquiry_30
+  - action: utter_symptom_inquiry_30
+- story: Follow-up advice for Tetanus (lockjaw)
+  steps:
+  - action: utter_symptom_inquiry_30
+  - intent: action_inquiry
+  - action: utter_action_inquiry_30
+- story: Provide advice for Hyperthermia (heat exhaustion)
+  steps:
+  - intent: symptom_inquiry_31
+  - action: utter_symptom_inquiry_31
+- story: Follow-up advice for Hyperthermia (heat exhaustion)
+  steps:
+  - action: utter_symptom_inquiry_31
+  - intent: action_inquiry
+  - action: utter_action_inquiry_31
+- story: Provide advice for Sprains or strains
+  steps:
+  - intent: symptom_inquiry_32
+  - action: utter_symptom_inquiry_32
+- story: Follow-up advice for Sprains or strains
+  steps:
+  - action: utter_symptom_inquiry_32
+  - intent: action_inquiry
+  - action: utter_action_inquiry_32
+- story: Provide advice for Ear infections
+  steps:
+  - intent: symptom_inquiry_33
+  - action: utter_symptom_inquiry_33
+- story: Follow-up advice for Ear infections
+  steps:
+  - action: utter_symptom_inquiry_33
+  - intent: action_inquiry
+  - action: utter_action_inquiry_33
+- story: Provide advice for Bladder irritation
+  steps:
+  - intent: symptom_inquiry_34
+  - action: utter_symptom_inquiry_34
+- story: Follow-up advice for Bladder irritation
+  steps:
+  - action: utter_symptom_inquiry_34
+  - intent: action_inquiry
+  - action: utter_action_inquiry_34
+- story: Provide advice for Anemia
+  steps:
+  - intent: symptom_inquiry_35
+  - action: utter_symptom_inquiry_35
+- story: Follow-up advice for Anemia
+  steps:
+  - action: utter_symptom_inquiry_35
+  - intent: action_inquiry
+  - action: utter_action_inquiry_35
+- story: Provide advice for Dehydration
+  steps:
+  - intent: symptom_inquiry_36
+  - action: utter_symptom_inquiry_36
+- story: Follow-up advice for Dehydration
+  steps:
+  - action: utter_symptom_inquiry_36
+  - intent: action_inquiry
+  - action: utter_action_inquiry_36
+- story: Provide advice for Hair loss
+  steps:
+  - intent: symptom_inquiry_37
+  - action: utter_symptom_inquiry_37
+- story: Follow-up advice for Hair loss
+  steps:
+  - action: utter_symptom_inquiry_37
+  - intent: action_inquiry
+  - action: utter_action_inquiry_37
+- story: Provide advice for Leptospirosis
+  steps:
+  - intent: symptom_inquiry_38
+  - action: utter_symptom_inquiry_38
+- story: Follow-up advice for Leptospirosis
+  steps:
+  - action: utter_symptom_inquiry_38
+  - intent: action_inquiry
+  - action: utter_action_inquiry_38
+- story: Provide advice for Whisker fatigue
+  steps:
+  - intent: symptom_inquiry_39
+  - action: utter_symptom_inquiry_39
+- story: Follow-up advice for Whisker fatigue
+  steps:
+  - action: utter_symptom_inquiry_39
+  - intent: action_inquiry
+  - action: utter_action_inquiry_39
+- story: Provide advice for Dull coat
+  steps:
+  - intent: symptom_inquiry_40
+  - action: utter_symptom_inquiry_40
+- story: Follow-up advice for Dull coat
+  steps:
+  - action: utter_symptom_inquiry_40
+  - intent: action_inquiry
+  - action: utter_action_inquiry_40
+- story: Provide advice for Kennel cough
+  steps:
+  - intent: symptom_inquiry_41
+  - action: utter_symptom_inquiry_41
+- story: Follow-up advice for Kennel cough
+  steps:
+  - action: utter_symptom_inquiry_41
+  - intent: action_inquiry
+  - action: utter_action_inquiry_41
+- story: Provide advice for Acute gastroenteritis (stomach flu)
+  steps:
+  - intent: symptom_inquiry_42
+  - action: utter_symptom_inquiry_42
+- story: Follow-up advice for Acute gastroenteritis (stomach flu)
+  steps:
+  - action: utter_symptom_inquiry_42
+  - intent: action_inquiry
+  - action: utter_action_inquiry_42
+- story: Provide advice for Seborrhea
+  steps:
+  - intent: symptom_inquiry_43
+  - action: utter_symptom_inquiry_43
+- story: Follow-up advice for Seborrhea
+  steps:
+  - action: utter_symptom_inquiry_43
+  - intent: action_inquiry
+  - action: utter_action_inquiry_43
+- story: Provide advice for Feline gingivitis
+  steps:
+  - intent: symptom_inquiry_44
+  - action: utter_symptom_inquiry_44
+- story: Follow-up advice for Feline gingivitis
+  steps:
+  - action: utter_symptom_inquiry_44
+  - intent: action_inquiry
+  - action: utter_action_inquiry_44
+- story: Provide advice for Folicular cyst
+  steps:
+  - intent: symptom_inquiry_45
+  - action: utter_symptom_inquiry_45
+- story: Follow-up advice for Folicular cyst
+  steps:
+  - action: utter_symptom_inquiry_45
+  - intent: action_inquiry
+  - action: utter_action_inquiry_45
